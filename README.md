@@ -57,7 +57,7 @@ train_y = train_df.filter(regex='Y') # Output : Y Feature
 print(train_x.isnull().any())
 print(train_y.isnull().any())
 ```
-- Optuna와 CatBoost를 이용해 최적의 Hyperprameter 값 도출
+- Optuna를 이용해 최적의 Hyperprameter 값 도출
 ```c
 def objective(trial: Trial) -> float:
     params = {
